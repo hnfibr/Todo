@@ -1,0 +1,114 @@
+<!--This html document forms the main page for the todo list
+web app, which will be accessed after loging in to create
+,update, read or delete the todo's linked to your account-->
+
+{% extends 'base.html' %}
+
+{% block head %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/todo_style.css') }}">
+{% endblock %}
+
+
+{% block body %}
+		
+		<div id="todo_container">
+			
+			<div class="in_todo_container_top flex">
+				<p>Todo</p>
+				
+				<div>
+					<p class="account_name"></p>
+					<div class="profile_picture"></div>
+				</div>
+				
+			</div>
+			
+			<div class="in_todo_container_bottom flex">
+				<div class='todos_container flex'>
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash. Take out the trash.Take out the trash.Take out the trash.Take out the trash.Take out the trash.Take out the trash.Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					<div class="todo flex">
+						<div class='todo_text flex'>Take out the trash.</div>
+						
+						<div class='delete flex'>X</div>
+					</div>
+					
+					
+				
+				</div>
+				
+				<button class='add_todo'>+</button>
+				
+				
+			</div>
+
+		</div>
+		
+		
+		<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/todo.js') }}"></script>
+{% endblock %}

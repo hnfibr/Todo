@@ -1,0 +1,70 @@
+<!--This html document comprises the login and create account
+pages of this todo list web app-->
+
+{% extends 'base.html' %}
+
+{% block head %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/access_style.css') }}">
+{% endblock %}
+
+
+{% block body %}
+	
+	<div id='container'>
+		
+		<div class='in_container_top flex'>
+			<p>Todo</p>
+		</div>
+		
+		
+		<form>
+			<div class='in_container_mid'>
+				<fieldset>
+					<legend>Username</legend>
+					<input class='username login_username' type='text' required/>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Password</legend>
+					<input class='password login_password' type='password' required/>
+				</fieldset>
+			</div>
+			
+			<div class='in_container_bottom flex'>
+				<p class='create_account_link'>Create_account</p>
+				
+				<button class='login_button'>Login</button>
+				<p class="access_msg access_msg_login"></p>
+			</div>
+		</form>
+		
+		
+		<form class='hidden'>
+			<div class='in_container_mid'>
+				<fieldset>
+					<legend>Username</legend>
+					<input class='username create_username' type='text' required/>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Password</legend>
+					<input class='password create_password' type='password' required/>
+				</fieldset>
+			</div>
+			
+			<div class='in_container_bottom flex'>
+				<p class='login_link'>Login</p>
+				
+				<button class='create_button'>Create</button>
+				<p class="access_msg access_msg_create"></p>
+			</div>
+		</form>
+	
+	
+	</div>
+	
+	<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/access.js') }}"></script>
+	
+	
+{% endblock %}

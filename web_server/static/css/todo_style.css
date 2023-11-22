@@ -1,0 +1,166 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+
+html{
+	font-size:10px;
+}
+
+:root{
+	--background:#384D48;
+	--details:#FF7F11;
+	--list:#F4F4EC;
+}
+
+
+body{
+	font-size:1.6rem;
+	background:#ACC3BE;
+	font-family:verdana;
+}
+
+	#todo_container{
+		background:var(--background);
+		height:100vh;
+		width:30vw;
+		margin:0 auto;
+		box-shadow:0px 0px 10px black;
+		padding:0px 10px;
+		box-sizing:border-box;
+	}
+	
+		.in_todo_container_top{
+			width:100%;
+			max-height:10%;
+			margin-bottom:5px;
+			border-bottom:2px solid var(--details);
+			box-sizing:border-box;
+			padding:5px 5px;
+			align-items:end;
+			justify-content:space-between;
+		}
+		
+			.in_todo_container_top>p{
+				color:var(--details);
+				font-size:2rem;
+				font-weight:bold;
+			}
+			
+			.in_todo_container_top>div{}	
+			
+				.in_todo_container_top>div>p{
+					display:inline-block;
+					color:var(--list);
+					margin-right:5px;
+				}	
+			
+				.in_todo_container_top>div>div{
+					display:inline-block;
+					width:30px;
+					height:30px;
+					border-radius:100%;
+					background:var(--list);
+				}
+				
+		.in_todo_container_bottom{
+			background:red;
+			flex-direction:column;
+			flex-wrap:nowrap !important;
+			align-items:center;
+			height:85%;
+			width:95%;
+			margin:0 auto;
+			overflow-x:scroll;
+			overflow-y:scroll;
+		}
+		
+			.todos_container{
+				background:yellow;
+				flex-direction:column;
+				align-items:center;
+				width:100%;
+				padding:10px 0px;
+				box-sizing:border-box;
+			}
+
+			
+				.todo{
+					justify-content:space-between;
+					background:var(--list);
+					color:black;
+					width:100%;
+					margin-bottom:10px;
+					border-radius:10px;
+				}
+				
+					.todo_text{
+						width:90%;
+						border:none;
+						outline:none;
+						box-sizing:border-box;
+						border-radius:10px;
+						background:none;
+						font-size:1.4rem;
+						font-weight:bold;
+						font-family:tahoma;
+						resize:none;
+						padding:0px 0px 0px 10px;
+						align-items:center;
+						
+						height:45px;
+						overflow:hidden;
+						line-height:21px;
+						/* transition:height 2s; */
+					}
+					
+						.todo_text:hover{
+							height:auto;
+							min-height:45px;
+							cursor:pointer;
+						}
+						
+					
+					.delete{
+						width:10%;
+						border:none;
+						outline:none;
+						justify-content:center;
+						align-items:center;
+						color:gray;
+					}
+					
+						.delete:hover{
+							cursor:pointer;
+							color:black;
+						}
+					
+			.add_todo{
+				background:var(--list);
+				width:30px;
+				height:30px;
+				border-radius:100%;
+				outline:none;
+				border:none;
+				font-size:2rem;
+				font-weight:bold;
+				transition:width 0.2s, height 0.2s, font-size 0.2s;
+			}
+			
+				.add_todo:hover{
+					cursor:pointer;
+					width:35px;
+					height:35px;
+					font-size:2.1rem;
+				}
+			
+			
+	.flex{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	
+	.hidden{
+		display:none;
+	}
