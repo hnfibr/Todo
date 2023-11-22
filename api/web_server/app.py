@@ -132,5 +132,10 @@ def logout():
     
     
     
+<<<<<<< HEAD:api/web_server/app.py
 #if __name__ == "__main__":
 #    app.run(debug=True)
+=======
+if __name__ == "__main__":
+    app.run()
+>>>>>>> f6c200876a45490b57e529fc2f409f82b0af4ab6:web_server/app.py
